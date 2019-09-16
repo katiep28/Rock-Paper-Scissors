@@ -80,7 +80,7 @@ function handleUserResponse (response){
                    break;
                  }
                 }
-             }
+            }
     
 
     
