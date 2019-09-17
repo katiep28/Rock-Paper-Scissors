@@ -42,16 +42,18 @@ function handleUserResponse (response){
       if (found === undefined){
           console.log('You MUST enter either Rock, Paper or Scissors. Try again');
         // Need a loop here so that they can re-try
+        return;
        }
     
-      else {
+      
 
          // If both the computer and human enter the same then it is a draw
 
-          if (lowerCaseResponse === computerResponse){
+        if (lowerCaseResponse === computerResponse){
              console.log('The computer chose: ' + computerResponse + ' It is a DRAW !');
+             return;
           }
-          else {
+        
          // Check to see who wins
               switch (computerResponse) {
               case 'rock':
@@ -79,9 +81,9 @@ function handleUserResponse (response){
                     }
                    break;
                  }
-                }
-            }
-    
+                
+            
+            
 
     
 
